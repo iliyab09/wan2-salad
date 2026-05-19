@@ -17,7 +17,7 @@ OUT_DIR.mkdir(exist_ok=True)
 app = FastAPI()
 pipe: WanImageToVideoPipeline | None = None
 
-MODEL_ID = os.getenv("MODEL_ID", "Wan-AI/Wan2.1-I2V-14B-480P")
+MODEL_ID = os.getenv("MODEL_ID", "Wan-AI/Wan2.1-I2V-14B-480P-Diffusers")
 
 
 @app.on_event("startup")
